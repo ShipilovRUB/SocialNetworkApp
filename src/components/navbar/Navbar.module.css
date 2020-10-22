@@ -4,13 +4,16 @@
     padding: 10px;
   }
 
-.item, .item a {
+.item a {
   color: black;
-  padding: 10px;
   text-decoration: none;
 }
 
-.item.active {
+.link {
+  padding: 10px;
+}
+
+a.active .link {
   font-weight: bold;
   background-color: #F5F6F7;
   border-style: solid;

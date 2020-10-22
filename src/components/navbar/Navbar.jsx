@@ -1,23 +1,34 @@
 import React from 'react'
-import navbarModule from './Navbar.module.css'
+import { NavLink } from 'react-router-dom';
+import mod from './Navbar.module.css'
 
 const Navbar = () => {
     return (
-        <nav className={navbarModule.nav}>
-            <div className={navbarModule.item}>
-                <a href="/profile">Profile</a>
+        <nav className={mod.nav}>
+            <div className={mod.item}>
+                <NavLink to="/profile" activeClassName={mod.active}>
+                    <div className={mod.link}>Profile</div>
+                </NavLink>
             </div>
-            <div className={`${navbarModule.item} ${navbarModule.active}`}>
-                <a href="/dialogs">Messages</a>
+            <div className={`${mod.item}`}>
+                <NavLink to="/dialogs" activeClassName={mod.active}>
+                    <div className={mod.link}>Messages</div>
+                </NavLink>
             </div>
-            <div className={navbarModule.item}>
-                <a href="/news">News</a>
+            <div className={mod.item}>
+                <NavLink to="/news" activeClassName={mod.active}>
+                    <div className={mod.link}>News</div>
+                </NavLink>
             </div>
-            <div className={navbarModule.item}>
-                <a href="/music">Music</a>
+            <div className={mod.item}>
+                <NavLink to="/music" activeClassName={mod.active}>
+                    <div className={mod.link}>Music</div>
+                </NavLink>
             </div>
-            <div className={navbarModule.item}>
-                <a href="/settings">Settings</a>
+            <div className={mod.item}>
+                <NavLink to="/settings" activeClassName={mod.active}>
+                    <div className={mod.link}>Settings</div>
+                </NavLink>
             </div>
         </nav>
     );
