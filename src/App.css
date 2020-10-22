@@ -1,11 +1,6 @@
-.header-wrapper {
-    background-color: #E9EBEE;
-    width: 100%;
-}
-
 .body-wrapper {
     background-color: #E9EBEE;
-    width: 100%;
+    min-height: 100vh;
 }
 
 .app-wrapper {
