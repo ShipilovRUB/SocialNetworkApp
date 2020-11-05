@@ -2,7 +2,7 @@ import React from 'react'
 import Post from './post/Post'
 import mod from './MyPosts.module.css'
 
-const MyPosts = () => {
+const MyPosts = (props) => {
     return (
         <div>
             
@@ -14,6 +14,7 @@ const MyPosts = () => {
             <div>
                 <textarea></textarea>
             </div>
+            
             <div>
                 <button>Add post</button>
             </div>

@@ -10,7 +10,7 @@ const Navbar = () => {
                     <div className={mod.link}>Profile</div>
                 </NavLink>
             </div>
-            <div className={`${mod.item}`}>
+            <div className={mod.item}>
                 <NavLink to="/dialogs" activeClassName={mod.active}>
                     <div className={mod.link}>Messages</div>
                 </NavLink>
