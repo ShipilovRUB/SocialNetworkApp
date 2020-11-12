@@ -5,9 +5,16 @@ import mod from './Post.module.css'
 const Post = (props) => {
     return (
         <div className={mod.post}>
-            <img className={mod.ava} src={ava} />
-            {props.message}
-            <div>
+            <div className={mod.avaDiv}>
+                <img className={mod.ava} src={ava} />
+            </div>
+
+
+            <div className={mod.message}>
+                {props.message}
+            </div>
+
+            <div className={mod.likes}>
                 <span>{props.likesCount} likes</span>
             </div>
         </div>

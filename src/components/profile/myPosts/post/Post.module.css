@@ -1,9 +1,36 @@
 .post {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 80px 30px;
+
     margin: 10px 0;
+
+    background-color: #fefefe;
+
+    border: 2px solid #fcfcfc;
+    border-radius: 20px;
+}
+
+.avaDiv {
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    margin: auto;
 }
 
 .ava {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+
+.message {
+    margin: auto 10px;
+}
+
+.likes {
+    grid-column-start: 2;
+
+    margin: 0 30px;
+    text-align: end;
 }
