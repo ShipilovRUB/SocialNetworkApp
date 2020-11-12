@@ -9,10 +9,17 @@ const Post = (props) => {
                 <img className={mod.ava} src={ava} />
             </div>
 
+            <div>
+                <div className={mod.author}>
+                    Artem Shipilov
+                </div>
 
-            <div className={mod.message}>
-                {props.message}
+                <div className={mod.message}>
+                    {props.message}
+                </div>
             </div>
+
+
 
             <div className={mod.likes}>
                 <span>{props.likesCount} likes</span>

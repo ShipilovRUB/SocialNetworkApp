@@ -3,12 +3,18 @@
     grid-template-columns: 3fr 10fr;
 }
 
-.dialogsItems {
+.authors {
     padding: 10px;
 }
 
-.dialogsItems .active a {
+.authors .active a {
     color: gold;
+}
+
+.ava {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .messages {

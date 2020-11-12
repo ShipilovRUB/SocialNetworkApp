@@ -1,18 +1,18 @@
 import React from 'react'
-import DialogsItem from './dialogsItem/DialogsItem'
+import Author from './author/Author'
 import mod from './Dialogs.module.css'
 import Message from './message/Message'
 
 const Dialogs = (props) => {
 
-    let dialogsElements = props.state.dialogs.map( d => <DialogsItem name={d.name} id={d.id} /> );
+    let authorElements = props.state.authors.map( d => <Author name={d.name} id={d.id} /> );
     let messagesElements = props.state.messages.map( m => <Message message={m.text} id={m.id} /> );
 
     return (
         <div className={mod.dialogs}>
 
-            <div className={mod.dialogsItems}>
-                {dialogsElements}
+            <div className={mod.authors}>
+                {authorElements}
             </div>
 
             <div className={mod.messages}>

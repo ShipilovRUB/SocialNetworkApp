@@ -1,6 +1,6 @@
 import React from 'react'
 import MyPosts from './myPosts/MyPosts'
-import mod from'./Profile.module.css'
+import mod from './Profile.module.css'
 import ProfileInfo from './ProfileInfo/ProfileInfo'
 
 
@@ -8,9 +8,15 @@ const Profile = (props) => {
 
     return (
         <div>
-            <ProfileInfo />
-            <MyPosts posts={props.state.posts}/>
+            <div>
+                <ProfileInfo />
+            </div>
+
+            <div>
+                <MyPosts posts={props.state.posts} />
+            </div>
         </div>
+
     );
 }
 

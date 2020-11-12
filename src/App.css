@@ -14,13 +14,15 @@
 
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
-    grid-gap: 0px;
+    grid-gap: 10px;
 }
 
 .app-wrapper-content {
     grid-area: con;
     
     padding: 20px;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
 
     background-color: white;
 }
