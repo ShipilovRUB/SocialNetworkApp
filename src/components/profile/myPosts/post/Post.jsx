@@ -20,7 +20,6 @@ const Post = (props) => {
             </div>
 
 
-
             <div className={mod.likes}>
                 <span>{props.likesCount} likes</span>
             </div>

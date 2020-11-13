@@ -1,0 +1,17 @@
+.friends{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px;
+
+    column-gap: 15px;
+}
+
+.friend {
+    margin: auto;
+    text-align: center;
+}
+
+.ava {
+    width: 60px;
+    border-radius: 50%;
+}

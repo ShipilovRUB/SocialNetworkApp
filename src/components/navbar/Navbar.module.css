@@ -1,7 +1,7 @@
 .nav {
     grid-area: nav;
 
-    padding: 10px;
+    padding: 5px;
   }
 
 .item a {
@@ -10,7 +10,7 @@
 }
 
 .link {
-  padding: 10px;
+  padding: 7px;
 }
 
 a.active .link {
